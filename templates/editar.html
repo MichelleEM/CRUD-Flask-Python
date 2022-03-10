@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases de Datos con Python</title>
+</head>
+<body>
+    <h1 id="titulos">Editar Registro</h1>
+    <form action="/api/editarCountry" method="POST">
+      <label for="Code">Ingrese el Code a Editar</label>
+      <br>
+      <input type="text" name="Code" id="Code">
+      <br>
+      <label for="Name">Name</label>
+      <br>
+      <input type="text" name="Name" id="Name">
+      <br>
+      <label for="Continent">Continent</label>
+      <br>
+      <input type="text" name="Continent" id="Continent">
+      <br>
+      <label for="Region">Region</label>
+      <br>
+      <input type="text" name="Region" id="Region">
+      <br>
+      <label for="SurfaceArea">Surface Area</label>
+      <br>
+      <input type="text" name="SurfaceArea" id="SurfaceArea">
+      <br>
+      <label for="IndepYear">Indep Year</label>
+      <br>
+      <input type="text" name="IndepYear" id="IndepYear">
+      <br>
+      <label for="Population">Population</label>
+      <br>
+      <input type="text" name="Population" id="Population">
+      <br>
+      <label for="LifeExpectancy">Life Expectancy</label>
+      <br>
+      <input type="text" name="LifeExpectancy" id="LifeExpectancy">
+      <br>
+      <label for="GNP">GNP</label>
+      <br>
+      <input type="text" name="GNP" id="GNP">
+      <br>
+      <label for="GNPOld">GNP Old</label>
+      <br>
+      <input type="text" name="GNPOld" id="GNPOld">
+      <br>
+      <label for="LocalName">Local Name</label>
+      <br>
+      <input type="text" name="LocalName" id="LocalName">
+      <br>
+      <label for="GovernmentForm">Gorvernment Form</label>
+      <br>
+      <input type="text" name="GovernmentForm" id="GovernmentForm">
+      <br>
+      <label for="HeadOfState">Head Of State</label>
+      <br>
+      <input type="text" name="HeadOfState" id="HeadOfState">
+      <br>
+      <label for="Capital">Capital</label>
+      <br>
+      <input type="text" name="Capital" id="Capital">
+      <br>
+      <label for="Code2">Code 2</label>
+      <br>
+      <input type="text" name="Code2" id="Code2">
+      <br>
+      <br>
+      <button type="submit">Actualizar Registro</button>
+          <a href="/api/mostrarCountrys">Mostrar Registro</a>
+    </form>
+</body>
+<style>
+  a{
+      color: #000000;
+    }
+    #titulos {
+    text-align: center;
+    font-family: verdana;
+    font-size: 300%;
+    }
+     /**FORMULARIO*/
+    form {
+        /* Centrar el formulario en la página */
+        margin: 0 auto;
+        width: 400px;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid #000000;
+        border-radius: 1em;
+    }
+    label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 218px;
+    text-align: right;
+  }
+  input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 400px;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+</style>
+</html>
